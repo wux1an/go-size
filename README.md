@@ -12,12 +12,21 @@ go get -u github.com/wux1an/go-size
 # Usage
 
 ```golang
-fmt.Println(0 * Byte)
-fmt.Println(1 * Byte)
-fmt.Println(2*Byte + 1*Bit)
-fmt.Println(20*KB + 512*Byte)
-fmt.Println(200*MB + 1024*KB)
-fmt.Println(1024 * 10000 * GB)
+package main
+
+import (
+	"fmt"
+	"github.com/wux1an/go-size"
+)
+
+func main() {
+	fmt.Println(0 * size.Byte)
+	fmt.Println(1 * size.Byte)
+	fmt.Println(2*size.Byte + 1*size.Bit)
+	fmt.Println(20*size.KB + 512*size.Byte)
+	fmt.Println(200*size.MB + 1024*size.KB)
+	fmt.Println(1024 * 10000 * size.GB)
+}
 ```
 
 output
