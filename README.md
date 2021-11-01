@@ -1,8 +1,6 @@
 # go-size
 print humans readable file size
 
-progressbar
-
 # Install
 
 ```bash
